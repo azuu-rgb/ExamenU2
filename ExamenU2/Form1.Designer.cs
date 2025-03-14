@@ -89,6 +89,7 @@
             Name = "Form1";
             Text = "Form1";
             Activated += Form1_Activated;
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

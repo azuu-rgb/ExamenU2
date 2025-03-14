@@ -45,6 +45,7 @@
             label7 = new Label();
             label8 = new Label();
             maskedTextBox1 = new MaskedTextBox();
+            button3 = new Button();
             SuspendLayout();
             // 
             // textBoxID
@@ -198,12 +199,25 @@
             maskedTextBox1.Size = new Size(123, 31);
             maskedTextBox1.TabIndex = 17;
             // 
+            // button3
+            // 
+            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic);
+            button3.ForeColor = Color.Gold;
+            button3.Location = new Point(370, 402);
+            button3.Name = "button3";
+            button3.Size = new Size(132, 48);
+            button3.TabIndex = 18;
+            button3.Text = "Cancelar";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // frmActualizarUsuario
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(714, 470);
+            Controls.Add(button3);
             Controls.Add(maskedTextBox1);
             Controls.Add(label7);
             Controls.Add(label8);
@@ -246,5 +260,6 @@
         private Label label7;
         private Label label8;
         private MaskedTextBox maskedTextBox1;
+        private Button button3;
     }
 }

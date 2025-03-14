@@ -25,7 +25,7 @@ namespace ExamenU2
         private void Form1_Activated(object sender, EventArgs e)
         {
             ClassdDAT classdDAT = new ClassdDAT();
-            DataSet dataSet = classdDAT.Consulta("select ID, APATERNO as [Apellido Paterno],AMATERNO as [Apellido Materno],NOMBRE,TELEFONO,CORREO" +
+            DataSet dataSet = classdDAT.Consulta("select ID, APATERNO as [APELLIDO PATERNO],AMATERNO as [APELLIDO MATERNO],NOMBRE,TELEFONO,CORREO" +
                                                  "\r\nfrom USUARIOS");
 
             if (dataSet != null)
@@ -38,6 +38,11 @@ namespace ExamenU2
         {
             frmInsertar frm = new frmInsertar();
             frm.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
